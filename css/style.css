@@ -1,0 +1,131 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.start-exam {
+    font-size: 32px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;}
+
+.u-tac {
+    text-align: center;
+}
+
+.screen {
+    height: 100%;
+}
+
+.screen--start::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.u-fl {
+    float: left;
+}
+
+.u-fr {
+    float: right;
+}
+
+.options-row {
+    padding: 10px 20px;
+    background-color: #f0f8ff;
+    border-bottom: 1px solid #d4ebff;
+}
+
+.options-row span {
+    padding: 15px 0;
+    display: inline-block;
+}
+
+.content-area {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1000px;
+}
+
+.question-area .description {
+    text-align: center;
+}
+
+.question-answers label {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #f0f8ff;
+}
+
+.question-answers label .text {
+    padding: 10px;
+    display: inline-block;
+}
+
+.question-answers label .option-wrap {
+    background-color: #008CBA;
+    display: inline-block;
+    padding: 10px;
+}
+
+.outcome-summary {
+    margin-bottom: 20px;
+}
+
+.correct {
+    color: #4CAF50;
+}
+
+.wrong {
+    color: #f44336;
+}
+
+.wrong-answers-holder {
+    margin-top: 20px;
+}
+
+.wrong-answers-holder td {
+    padding: 10px 5px;
+}
+
+.wrong-answers-holder td.correct-answer {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.wrong-answers-holder td.wrong-answer {
+    background-color: #f44336;
+    color: #fff;
+}
