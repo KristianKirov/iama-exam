@@ -2,11 +2,11 @@ config = {
     "categories": [
         {
             "name": "mppsm",
-            "questions": 30
+            "questions": 20
         },
         {
             "name": "korabovodene",
-            "questions": 10
+            "questions": 20
         },
         {
             "name": "morska-praktika",
@@ -14,7 +14,7 @@ config = {
         },
         {
             "name": "tehnicheska-podgotovka",
-            "questions": 10
+            "questions": 5
         },
         {
             "name": "zakonodatelstvo",
