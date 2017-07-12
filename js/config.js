@@ -22,5 +22,5 @@ config = {
         }
     ],
     "duration": 60,
-    "correctAnswers": 50
+    "correctAnswers": 51
 };
