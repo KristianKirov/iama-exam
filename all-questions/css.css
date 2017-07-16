@@ -1,4 +1,7 @@
-<style>
+.deskov td {
+	cursor: pointer;
+}
+
 .main {
 	width: 1020px;
 	margin-right: auto;

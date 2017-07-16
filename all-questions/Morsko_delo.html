@@ -18,30 +18,15 @@ body {
 <script src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    alert('done!!');
-
-$('body').on("click", function() { alert('click 1') });
-
      $('body').on("click", ".deskov td", function() {
-      alert('click 2');
-
-       alert("0: " + $(this).index());
-       alert("1: " + $(this).index());
          if( $(this).index() === 0 || $(this).index() === 1 ) return false;
-         alert("2: " + $(this).closest('tr').find('.act').length);
-         alert("3: " + $(this).closest('tr').find('.wrong').length);
          if( $(this).closest('tr').find('.act').length || $(this).closest('tr').find('.wrong').length ) return false;
 
          if ( $(this).hasClass('important') ) {
-           alert("4");
             $(this).addClass('act');
-            alert("5");
          } else {
-           alert("6");
             $(this).addClass('wrong');
-            alert("7");
             $(this).closest('tr').find('td.important').addClass('act');
-            alert("8");
          }
      });
   });
