@@ -72,6 +72,9 @@ function start() {
     exam.ui.endScreen.hide();
     exam.ui.examScreen.show();
 
+    exam.ui.nextButtons.show();
+    exam.ui.prevButtons.show();
+
     var currentTime = new Date().getTime();
     var examEndTime = currentTime + 60000 * config.duration;
 
