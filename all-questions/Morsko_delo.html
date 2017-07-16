@@ -20,7 +20,11 @@ body {
   $(document).ready(function() {
     alert('done!!');
 
+$('body').on("click", function() { alert('click 1') });
+
      $('body').on("click", ".deskov td", function() {
+      alert('click 2');
+
        alert("0: " + $(this).index());
        alert("1: " + $(this).index());
          if( $(this).index() === 0 || $(this).index() === 1 ) return false;
