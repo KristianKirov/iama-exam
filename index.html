@@ -7,109 +7,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section class="u-tac screen screen--start">
-        <a href="#" class="button start-exam">Започни</a>
-    </section>
-
-    <section class="screen screen--exam">
-        <div class="clearfix options-row">
-            <div class="u-fl">
-                <a href="#" class="button button4 prev-question">&lt; Предишен</a>
-                <a href="#" class="button button3 end-exam">Край</a>
-                <span class="question-index"></span>
-            </div>
-            <div class="u-fr">
-                <span class="timer"></span>
-                <a href="#" class="button button2 next-question">Следващ &gt;</a>
-            </div>
-        </div>
-
-        <div class="question-area content-area">
-            <div class="description">
-                <h1 class="question-text"></h1>
-                <div class="question-images"></div>
-            </div>
-            <div class="question-answers">
-
-            </div>
-        </div>
-    </section>
-
-    <section class="screen screen--end">
-        <div class="content-area">
-            <div class="u-tac">
-                <h1 class="outcome-text"></h1>
-                <div class="outcome-summary">
-                    <div class="correct">
-                        Верни отговори: <strong class="correct-answers-count"></strong>
-                    </div>
-                    <div class="wrong">
-                        Грешни отговори: <strong class="wrong-answers-count"></strong>
-                    </div>
-                </div>
-
-                <div>
-                    <a href="#" class="button start-exam">Нов изпит</a>
-                </div>
-            </div>
-
-            <div class="wrong-answers-holder">
-            </div>
-        </div>
-    </section>
-
-    <script id="template-images" type="text/template">
-        <%for(var index in this) {%> 
-            <img src="<%this[index]%>" /><br />
-        <%}%>
-    </script>
-
-    <script id="template-answers" type="text/template">
-        <%for(var index in this.answers) {%> 
-            <label for="answer-<%index%>">
-                <span class="option-wrap">
-                    <input type="radio" name="answer" id="answer-<%index%>" value="<%index%>" <%if(this.selectedAnswer == index) {%>checked<%}%> />
-                </span>
-                <span class="text"><%this.answers[index]%></span>
-            </label>
-        <%}%>
-    </script>
-
-    <script id="template-wrong-answers" type="text/template">
-        <%if (this && this.length) {%>
-            <table border="1">
-            <%for(var index in this) { var question = this[index];%>
-                <tr>
-                    <td><%(parseInt(index)+1)%></td>
-                    <td>
-                        <div><%question.question%></div>
-                        <%if (question.images && question.images.length) {%>
-                        <div>
-                            <%for (var index3 in question.images) {%>
-                                <img src="<%question.images[index3]%>" /><br />
-                            <%}%>
-                        </div>
-                        <%}%>
-                    </td>
-                    <%for(var index2 in question.answers) { var answer = question.answers[index2];%>
-                        <td class="<%if(question.selectedAnswer == index2) {%>wrong-answer<%} else if (question.correctAnswer == index2) {%>correct-answer<%}%>">
-                            <%answer%>
-                        </td>
-                    <%}%>
-                </tr>
-            <%}%>
-            </table>
-        <%}%>
-    </script>
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/questions.js"></script>
-    <script src="js/script.js"></script>
+    <ul>
+        <li><a href="simulator">Симулатор</a></li>
+        <li><a href="all-questions/Morsko_delo.html">Всички въпроси</a></li>
+    </ul>
 </body>
 
 </html>

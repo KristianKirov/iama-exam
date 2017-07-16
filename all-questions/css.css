@@ -1,0 +1,39 @@
+<style>
+.main {
+	width: 1020px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.kartinka {
+	text-align: center;
+	margin-top: 5px;
+}
+a:link {
+	color: #00F;
+}
+a:hover {
+	color: #F00;
+}
+a:active {
+	color: #F00;
+}
+.act {
+	color: #FFF;
+	text-decoration: underline;
+	background-color: green;
+}
+.wrong {
+	color: #FFF;
+	text-decoration: underline;	
+	background-color: red;
+}
+
+.main {
+	width: 1020px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.active {
+	background-color: #F60;
+}
